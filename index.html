@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Svuti</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<div class="wrapper">
+			<div class="header-flex">
+				<div class="logo">
+					<img src="img/logo.png" alt="" width="32px" height="32px">
+					<span>Svuti</span>
+				</div>
+				<ul class="menu-header">
+					<a class="li-header-active li-header"><li>Играть</li></a>
+					<a class="li-header"><li>Новости</li></a>
+					<a class="li-header"><li>Помощь</li></a>
+					<a class="li-header"><li>Вывод</li></a>
+				</ul>
+				<div>
+					<button class="btn1">Вход</button>
+					<button class="btn2">Регистрация</button>
+				</div>
+			</div>
+	</div>
+</header>
+<div class="wrapper"></div>
+
+<main class="wrapper">
+	<h3 id="balance">Ваш баланс: 1000р</h3>
+	<div class="blok-vvod">
+		<label for="stavka">Ставка</label>
+		<input class="input" name="num" type="number" value="100" id="stavka" min="1">
+		<div class="stavMath">
+			<button  id="x2">x2</button>
+			<button id="del2">/2</button>
+			<button id="max">max</button>
+			<button id="sto">100</button>
+		</div>
+		<label for="koef">Шанс</label>
+		<input id="koef" class="input" name="num" type="number" value="50" min="1" max="99">
+		<div class="stavMath">
+			<button  id="x2k">x2</button>
+			<button id="del2k">/2</button>
+			<button id="maxk">max</button>
+			<button id="mink">min</button>
+		</div>
+	</div>
+
+	<span id="win-show" >Возможный выигрыш: 200р</span>
+	<button id="play">Играть</button>
+
+</main>
+
+	<script src="app.js"></script>
+</body>
+</html>
