@@ -31,11 +31,13 @@
 <main class="wrapper">
 	
 	<div class="block-play">
-		<h3 id="balance">Ваш баланс: 1000р</h3>
+		<h3 id="balance">Ваш баланс: 1000.00р</h3>
+		<hr class="balance-hr">
 	<div class="blok-vvod">
+		<div class="vvod-left">
 		<div class="vvod-stavka">
 			<label for="stavka">Ставка</label>
-		<input class="input" name="num" type="number" value="100" id="stavka" min="1">
+		<input class="input" name="num" type="number" value="100" id="stavka" min="1" oninput="ShowMabyWin()">
 		<div class="stavMath">
 			<button  id="x2">x2</button>
 			<button id="del2">/2</button>
@@ -46,7 +48,7 @@
 
 		<div class="vvod-koef">
 			<label for="koef">Шанс</label>
-		<input id="koef" class="input" name="num" type="number" value="50" min="1" max="99">
+		<input id="koef" class="input" name="num" type="number" value="50" min="1" max="99" oninput="ShowMabyWin()">
 		<div class="stavMath">
 			<button  id="x2k">x2</button>
 			<button id="del2k">/2</button>
@@ -54,11 +56,23 @@
 			<button id="mink">min</button>
 		</div>
 		</div>
+		
+		</div>
+		<div class="vvod-info-play">
+			<p id="win-show" >200.00р</p>
+			<p class="maby-win">Возможный выигрыш</p>
+			<div class="play-blok">
+				<button id="play-min" class="play">Меньше</button>
+				<button id="play-max" class="play">Больше</button>
+			</div>
+			
+			<div id="show-result" class="show-result d-none">Выиграли 200.00</div>
+	 </div>
 
 	</div>
 
-	<span id="win-show" >Возможный выигрыш: 200р</span>
-	<button id="play">Играть</button>
+	 
+
 	</div>
 
 	<div class="blok-avtor">
